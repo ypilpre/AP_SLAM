@@ -1,5 +1,10 @@
 import acceuil
+from player import Joueur
+import tkinter as tk
 
 if __name__ == "__main__":
-    # execute only if run as a script
-    acceuil.Acceuil()
+    rootWindow = tk.Tk()
+    rootWindow.withdraw()
+    joueur = Joueur()
+    acceuil.Acceuil(rootWindow,joueur).openWindow()
+
